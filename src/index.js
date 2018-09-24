@@ -4,12 +4,12 @@ import AppBar from './AppBar';
 import AutoComplete from './AutoComplete';
 import Avatar from './Avatar';
 import Badge from './Badge';
-import BottomNav from './BottomNav';
-import BottomSheet from './BottomSheet';
+// import BottomNav from './BottomNav';
+// import BottomSheet from './BottomSheet';
 import Breadcrumbs from './Breadcrumbs';
 import Button from './Button';
-import Card from './Card';
-import Carousel from './Carousel';
+// import Card from './Card';
+// import Carousel from './Carousel';
 import Checkbox from './Checkbox';
 import Chip from './Chip';
 import DateInput from './DateInput';
@@ -24,7 +24,7 @@ import GridList from './GridList';
 import Helpers from './Helpers';
 import Icon from './Icon';
 import List from './List';
-import LoadMore from './LoadMore';
+// import LoadMore from './LoadMore';
 import Menu from './Menu';
 import Pagination from './Pagination';
 import Paper from './Paper';
@@ -47,13 +47,25 @@ import theme from './theme';
 import * as Colors from './theme/colors';
 
 const version = '__VERSION__';
+// const components = {
+//   Alert, AppBar, AutoComplete, Avatar,
+//   Badge, BottomNav, BottomSheet, Breadcrumbs, Button,
+//   Card, Carousel, Checkbox, Chip,
+//   DataTable, DateInput, Dialog, Divider, Drawer,
+//   ExpansionPanel, Form, Grid, GridList, Helpers, Icon,
+//   LoadMore, List, Menu,
+//   Pagination, Paper, Picker, Popover, Progress, Radio,
+//   Select, SlidePicker, Slider, Snackbar, Stepper, SubHeader, Switch,
+//   Tabs, TextField, Tooltip
+// };
+
 const components = {
   Alert, AppBar, AutoComplete, Avatar,
-  Badge, BottomNav, BottomSheet, Breadcrumbs, Button,
-  Card, Carousel, Checkbox, Chip,
+  Badge, Breadcrumbs, Button,
+  Checkbox, Chip,
   DataTable, DateInput, Dialog, Divider, Drawer,
   ExpansionPanel, Form, Grid, GridList, Helpers, Icon,
-  LoadMore, List, Menu,
+  List, Menu,
   Pagination, Paper, Picker, Popover, Progress, Radio,
   Select, SlidePicker, Slider, Snackbar, Stepper, SubHeader, Switch,
   Tabs, TextField, Tooltip
@@ -75,12 +87,12 @@ export {
   AutoComplete,
   Avatar,
   Badge,
-  BottomNav,
-  BottomSheet,
+  // BottomNav,
+  // BottomSheet,
   Breadcrumbs,
   Button,
-  Card,
-  Carousel,
+  // Card,
+  // Carousel,
   Checkbox,
   Chip,
   DateInput,
@@ -95,7 +107,7 @@ export {
   Helpers,
   Icon,
   List,
-  LoadMore,
+  // LoadMore,
   Menu,
   Pagination,
   Paper,
