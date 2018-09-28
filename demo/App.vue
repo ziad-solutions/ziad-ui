@@ -36,11 +36,20 @@ export default {
         { name: 'Breadcrumbs', route: 'breadcrumbs'},
         { name: 'Buttons', route: 'buttons'},
         { name: 'Chips', route: 'chips'},
+        { name: 'DatePicker', route: 'datepicker'},
+        { name: 'DataTable', route: 'datatable'},
         { name: 'Dialog', route: 'dialog'},
+        { name: 'Divider', route: 'divider'},
+        { name: 'ExpansionPanel', route: 'expansion-panel'},
         { name: 'Form', route: 'form'},
         { name: 'List', route: 'list'},
+        { name: 'Menu', route: 'menu'},
         { name: 'Paginations', route: 'paginations'},
-        { name: 'Select', route: 'select'}
+        { name: 'Paper', route: 'paper'},
+        { name: 'Select', route: 'select'},
+        { name: 'Snackbar', route: 'snackbar'},
+        { name: 'Stepper', route: 'stepper'},
+        { name: 'Tabs', route: 'tabs'}
       ]
     }
   }
