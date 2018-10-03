@@ -9,7 +9,7 @@
       </mu-list>
     </mu-drawer>
 
-    <mu-appbar style="width: 100%;" color="info">
+    <mu-appbar style="width: 100%;" color="primary">
       <mu-button icon slot="left" @click="open = !open">
         <mu-icon value="menu"></mu-icon>
       </mu-button>

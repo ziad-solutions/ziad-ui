@@ -4,17 +4,17 @@
 
     <h2>Simple</h2>
     <div class="code">
-      <mu-expansion-panel>
+      <mu-expansion-panel :zDepth="1">
         <div slot="header">Panel 1</div>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
         <mu-button slot="action" flat>Cancel</mu-button>
         <mu-button slot="action" flat color="primary">Save</mu-button>
       </mu-expansion-panel>
-      <mu-expansion-panel>
+      <mu-expansion-panel :zDepth="1">
         <div slot="header">Panel 2</div>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
       </mu-expansion-panel>
-      <mu-expansion-panel>
+      <mu-expansion-panel :zDepth="1">
         <div slot="header">Panel 3</div>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
       </mu-expansion-panel>
