@@ -2,6 +2,8 @@
   <div>
     <h1>Paper</h1>
 
+    <mu-paper class="demo-paper" :z-depth="1"></mu-paper>
+
     <h2>Simple</h2>
     <div class="code">
       <mu-paper class="demo-paper" :z-depth="1"></mu-paper>
@@ -13,11 +15,11 @@
 
     <h2>Circular</h2>
     <div class="code">
-      <mu-paper class="demo-paper" circle :z-depth="1"></mu-paper>
-      <mu-paper class="demo-paper" circle :z-depth="2"></mu-paper>
-      <mu-paper class="demo-paper" circle :z-depth="3"></mu-paper>
-      <mu-paper class="demo-paper" circle :z-depth="4"></mu-paper>
-      <mu-paper class="demo-paper" circle :z-depth="5"></mu-paper>
+      <mu-paper class="demo-paper-circle" circle :z-depth="1"></mu-paper>
+      <mu-paper class="demo-paper-circle" circle :z-depth="2"></mu-paper>
+      <mu-paper class="demo-paper-circle" circle :z-depth="3"></mu-paper>
+      <mu-paper class="demo-paper-circle" circle :z-depth="4"></mu-paper>
+      <mu-paper class="demo-paper-circle" circle :z-depth="5"></mu-paper>
     </div>
 
     <h2>Paper Props</h2>
@@ -25,3 +27,18 @@
 
   </div>
 </template>
+
+<style>
+  .demo-paper {
+    display: block;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  .demo-paper-circle {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+</style>
+
