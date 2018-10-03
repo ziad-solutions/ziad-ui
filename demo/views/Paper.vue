@@ -2,24 +2,22 @@
   <div>
     <h1>Paper</h1>
 
-    <mu-paper class="demo-paper" :z-depth="1"></mu-paper>
-
     <h2>Simple</h2>
     <div class="code">
-      <mu-paper class="demo-paper" :z-depth="1"></mu-paper>
-      <mu-paper class="demo-paper" :z-depth="2"></mu-paper>
-      <mu-paper class="demo-paper" :z-depth="3"></mu-paper>
-      <mu-paper class="demo-paper" :z-depth="4"></mu-paper>
-      <mu-paper class="demo-paper" :z-depth="5"></mu-paper>
+      <mu-paper class="demo-paper" :z-depth="1">Aqui vai o texto</mu-paper>
+      <mu-paper class="demo-paper" :z-depth="2">Aqui vai o texto</mu-paper>
+      <mu-paper class="demo-paper" :z-depth="3">Aqui vai o texto</mu-paper>
+      <mu-paper class="demo-paper" :z-depth="4">Aqui vai o texto</mu-paper>
+      <mu-paper class="demo-paper" :z-depth="5">Aqui vai o texto</mu-paper>
     </div>
 
     <h2>Circular</h2>
     <div class="code">
-      <mu-paper class="demo-paper-circle" circle :z-depth="1"></mu-paper>
-      <mu-paper class="demo-paper-circle" circle :z-depth="2"></mu-paper>
-      <mu-paper class="demo-paper-circle" circle :z-depth="3"></mu-paper>
-      <mu-paper class="demo-paper-circle" circle :z-depth="4"></mu-paper>
-      <mu-paper class="demo-paper-circle" circle :z-depth="5"></mu-paper>
+      <mu-paper class="demo-paper-circle" circle :z-depth="1">Aqui vai o texto</mu-paper>
+      <mu-paper class="demo-paper-circle" circle :z-depth="2">Aqui vai o texto</mu-paper>
+      <mu-paper class="demo-paper-circle" circle :z-depth="3">Aqui vai o texto</mu-paper>
+      <mu-paper class="demo-paper-circle" circle :z-depth="4">Aqui vai o texto</mu-paper>
+      <mu-paper class="demo-paper-circle" circle :z-depth="5">Aqui vai o texto</mu-paper>
     </div>
 
     <h2>Paper Props</h2>

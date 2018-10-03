@@ -49,7 +49,8 @@ export default {
         { name: 'Select', route: 'select'},
         { name: 'Snackbar', route: 'snackbar'},
         { name: 'Stepper', route: 'stepper'},
-        { name: 'Tabs', route: 'tabs'}
+        { name: 'Tabs', route: 'tabs'},
+        { name: 'Title', route: 'title'}
       ]
     }
   }
