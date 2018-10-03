@@ -8,31 +8,31 @@
         <mu-stepper :active-step="activeStep">
           <mu-step>
             <mu-step-label>
-              选择活动地点
+              Passo 1
             </mu-step-label>
           </mu-step>
           <mu-step>
             <mu-step-label>
-              创建一个群组
+              Passo 2
             </mu-step-label>
           </mu-step>
           <mu-step>
             <mu-step-label>
-              宣传活动
+              Passo 3
             </mu-step-label>
           </mu-step>
         </mu-stepper>
         <div class="demo-step-content">
           <p v-if="finished">
-            都完成啦!<a href="javascript:;" @click="reset">点这里</a>可以重置
+            <a href="javascript:;" @click="reset">Resetar tudo!</a>
           </p>
           <template v-if="!finished">
             <p>
-              {{content}}
+              {{ content }}
             </p>
             <div>
-              <mu-button flat class="demo-step-button" :disabled="activeStep === 0" @click="handlePrev"> 上一步 </mu-button>
-              <mu-button class="demo-step-button" color="primary" @click="handleNext"> {{activeStep === 2 ? '完成' : '下一步'}} </mu-button>
+              <mu-button class="demo-step-button" round :disabled="activeStep === 0" @click="handlePrev"> Voltar </mu-button>
+              <mu-button class="demo-step-button" round color="primary" @click="handleNext"> {{activeStep === 2 ? 'Próximo' : 'Próximo'}} </mu-button>
             </div>
           </template>
         </div>
@@ -45,42 +45,42 @@
         <mu-stepper :active-step="vactiveStep" orientation="vertical">
           <mu-step>
             <mu-step-label>
-              选择活动地点
+              Passo 1
             </mu-step-label>
             <mu-step-content>
               <p>
-                在附近选择一个活动的地点, 最好靠近地铁站公交站，已方便交通，附近设施应尽量完善，最重要的是有Wifi
+                Mensagem do passo 1
               </p>
-              <mu-button class="demo-step-button" @click="vhandleNext" color="primary">下一步</mu-button>
+              <mu-button class="demo-step-button" round @click="vhandleNext" color="primary">Próximo</mu-button>
             </mu-step-content>
           </mu-step>
           <mu-step>
             <mu-step-label>
-              创建一个群组
+              Passo 2
             </mu-step-label>
             <mu-step-content>
               <p>
-                创建群组，50人左右，以18-25单身青年为主。。。。。
+                Mensagem do passo 2
               </p>
-              <mu-button class="demo-step-button" @click="vhandleNext" color="primary">下一步</mu-button>
-              <mu-button flat class="demo-step-button" @click="vhandlePrev">上一步</mu-button>
+              <mu-button round class="demo-step-button" @click="vhandleNext" color="primary">Próximo</mu-button>
+              <mu-button round class="demo-step-button" @click="vhandlePrev">Voltar</mu-button>
             </mu-step-content>
           </mu-step>
           <mu-step>
             <mu-step-label>
-              宣传活动
+              Passo 3
             </mu-step-label>
             <mu-step-content>
               <p>
-                多在群里发消息宣传宣传，有事没事多在群里唠唠嗑，确定的话就ok拉
+                Mensagem do passo 1
               </p>
-              <mu-button class="demo-step-button" @click="vhandleNext" color="primary">完成</mu-button>
-              <mu-button flat class="demo-step-button" @click="vhandlePrev">上一步</mu-button>
+              <mu-button round class="demo-step-button" @click="vhandleNext" color="primary">Próximo</mu-button>
+              <mu-button round class="demo-step-button" @click="vhandlePrev">Voltar</mu-button>
             </mu-step-content>
           </mu-step>
         </mu-stepper>
         <p v-if="vfinished">
-          都完成啦!<a href="javascript:;" @click="vreset">点这里</a>可以重置
+          <a href="javascript:;" @click="vreset">Resetar tudo!</a>
         </p>
       </div>
     </div>
@@ -107,16 +107,16 @@ export default {
       let message = ''
       switch (this.activeStep) {
         case 0:
-          message = '选择一个活动的地点';
+          message = 'Mensagem do passo 1';
           break
         case 1:
-          message = '创建群组，50人左右';
+          message = 'Mensagem do passo 2';
           break
         case 2:
-          message = '多在群里发消息宣传宣传';
+          message = 'Mensagem do passo 3';
           break
         default:
-          message = 'fuck! 又 TM 出错了！！！';
+          message = 'Final dos passos';
           break
       }
       return message

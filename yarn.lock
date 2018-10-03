@@ -4725,6 +4725,16 @@ ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
 
+muse-ui@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/muse-ui/-/muse-ui-3.0.1.tgz#6c22cc424f3573b7c8ddcc5a662d40f2e4c8caea"
+  dependencies:
+    body-scroll-lock "^2.5.7"
+    dayjs "^1.6.5"
+    keycode "^2.1.9"
+    normalize-wheel "^1.0.1"
+    resize-observer-polyfill "^1.5.0"
+
 mute-stream@0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.7.tgz#3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"
@@ -7392,7 +7402,7 @@ vue-template-es2015-compiler@^1.2.2, vue-template-es2015-compiler@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.6.0.tgz#dc42697133302ce3017524356a6c61b7b69b4a18"
 
-vue@^2.5.13:
+vue@^2.5.0:
   version "2.5.17"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.17.tgz#0f8789ad718be68ca1872629832ed533589c6ada"
 
