@@ -22,6 +22,15 @@
       <mu-title color="info" textStrong="900">Font width 900</mu-title>
     </div>
 
+    <h2>h1, h2, h3...</h2>
+    <div class="code">
+      <mu-title type="h1" color="primary" textStrong="100">Font h1</mu-title>
+      <mu-title type="h2" color="secondary" textStrong="300">Font h2</mu-title>
+      <mu-title type="h3" color="success" textStrong="500">Font h3</mu-title>
+      <mu-title type="h4" color="warning" textStrong="700">Font h4</mu-title>
+      <mu-title type="h5" color="info" textStrong="900">Font h5</mu-title>
+    </div>
+
   </div>
 </template>
 
