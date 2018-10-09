@@ -6,6 +6,7 @@ import Avatar from './Avatar';
 import Badge from './Badge';
 import Breadcrumbs from './Breadcrumbs';
 import Button from './Button';
+import BottomNav from './BottomNav';
 import Checkbox from './Checkbox';
 import Chip from './Chip';
 import DateInput from './DateInput';
@@ -46,7 +47,7 @@ const version = '__VERSION__';
 
 const components = {
   Alert, AppBar, AutoComplete, Avatar,
-  Badge, Breadcrumbs, Button, Checkbox, Chip,
+  Badge, Breadcrumbs, Button, BottomNav, Checkbox, Chip,
   DataTable, DateInput, Dialog, Divider, Drawer,
   ExpansionPanel, Form, Grid, GridList, Helpers, Icon, List, Menu,
   Pagination, Paper, Picker, Popover, Progress, Radio,
@@ -70,7 +71,7 @@ export {
   AutoComplete,
   Avatar,
   Badge,
-  // BottomNav,
+  BottomNav,
   // BottomSheet,
   Breadcrumbs,
   Button,
