@@ -20,6 +20,7 @@ import Select from './views/Select.vue';
 import Snackbar from './views/Snackbar.vue';
 import Stepper from './views/Stepper.vue';
 import Tabs from './views/Tabs.vue';
+import Title from './views/Title.vue';
 
 Vue.use(Router);
 
@@ -120,6 +121,11 @@ export default new Router({
       path: '/tabs',
       name: 'tabs',
       component: Tabs
+    },
+    {
+      path: '/title',
+      name: 'title',
+      component: Title
     }
   ]
 });

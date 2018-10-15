@@ -61,11 +61,11 @@ export default {
     clockType: TimePicker.props.format,
     okLabel: {
       type: String,
-      default: '确定'
+      default: 'Ok' // 确定
     },
     cancelLabel: {
       type: String,
-      default: '取消'
+      default: 'Cancelar' // 取消
     },
     value: {},
     valueFormat: String,

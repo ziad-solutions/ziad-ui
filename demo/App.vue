@@ -9,7 +9,7 @@
       </mu-list>
     </mu-drawer>
 
-    <mu-appbar style="width: 100%;" color="info">
+    <mu-appbar style="width: 100%;" color="primary">
       <mu-button icon slot="left" @click="open = !open">
         <mu-icon value="menu"></mu-icon>
       </mu-button>
@@ -49,7 +49,8 @@ export default {
         { name: 'Select', route: 'select'},
         { name: 'Snackbar', route: 'snackbar'},
         { name: 'Stepper', route: 'stepper'},
-        { name: 'Tabs', route: 'tabs'}
+        { name: 'Tabs', route: 'tabs'},
+        { name: 'Title', route: 'title'}
       ]
     }
   }
