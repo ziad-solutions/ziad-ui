@@ -4,16 +4,15 @@
 </p>
 
 
-## Instalação
+## 1. Instalação
 
-Ziad UI está no NPM [npm package](https://www.npmjs.com/package/ziad-ui)
+#### 1.1 Ziad UI está no NPM [npm package](https://www.npmjs.com/package/ziad-ui)
 
 ```bash
-npm install ziad-ui -S
-yarn add ziad-ui
+npm install ziad-ui -save
 ```
 
-## Modo de usar
+#### 1.2 Modo de usar
 
 ```javascript
 import Vue from 'vue'
@@ -21,5 +20,29 @@ import ZiadUI from 'ziad-ui'
 import 'ziad-ui/dist/ziad-ui.css'
 Vue.use(ZiadUI)
 ```
+-------------------------------------------------------
+
+## 2. Rodar o demo
+
+```
+npm run dev
+```
+Acessar http://localhost:1234
+
+-------------------------------------------------------
+
+## 3. Gerando o BUILD
+Antes de rodar o build verifique qual é a próxima versão a buildar e altere corretamente no arquivo package.json
+```
+npm run build
+```
+
+-------------------------------------------------------
+
+## 4. Pegadinhas
+
+- As vezes pode precisar do parcel para rodar a demo
+- Todos os comandos acima devem ser rodados em um terminal unix (no caso do windows utilize o ubuntu cmd)
+
 
 Esse projeto é um Fork de [MuseUI](https://muse-ui.org) verifique a documentação.
