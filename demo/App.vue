@@ -9,7 +9,7 @@
       </mu-list>
     </mu-drawer>
 
-    <mu-appbar style="width: 100%;" color="primary">
+    <mu-appbar color="primary">
       <mu-button icon slot="left" @click="open = !open">
         <mu-icon value="menu"></mu-icon>
       </mu-button>
@@ -81,12 +81,22 @@ export default {
     color: #555;
   }
 
+  .mu-appbar {
+    height: 50px !important;
+  }
+  .mu-appbar-title {
+    font-size: 12px;
+    line-height: 50px !important;
+  }
+
   table.table {
     width: 100%;
     background: #EEEEEE;
+    border: 1px #ccc solid;
+    border-collapse: collapse;
   }
   table.table td, table.table th {
-    padding: 3px;
+    padding: 5px;
   }
   table.table thead {
     background: #ccc;
