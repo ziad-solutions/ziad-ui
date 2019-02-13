@@ -13,6 +13,7 @@ import DateInput from './DateInput';
 import DataTable from './DataTable';
 import Dialog from './Dialog';
 import Divider from './Divider';
+import Dot from './Dot';
 import Drawer from './Drawer';
 import ExpansionPanel from './ExpansionPanel';
 import Form from './Form';
@@ -48,7 +49,7 @@ const version = '__VERSION__';
 const components = {
   Alert, AppBar, AutoComplete, Avatar,
   Badge, Breadcrumbs, Button, BottomNav, Checkbox, Chip,
-  DataTable, DateInput, Dialog, Divider, Drawer,
+  DataTable, DateInput, Dialog, Divider, Dot, Drawer,
   ExpansionPanel, Form, Grid, GridList, Helpers, Icon, List, Menu,
   Pagination, Paper, Picker, Popover, Progress, Radio,
   Select, SlidePicker, Slider, Snackbar, Stepper, SubHeader, Switch,
@@ -83,6 +84,7 @@ export {
   DataTable,
   Dialog,
   Divider,
+  Dot,
   Drawer,
   ExpansionPanel,
   Form,
