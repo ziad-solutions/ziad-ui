@@ -5,38 +5,46 @@
     <h2>Simple</h2>
     <div class="code">
       <mu-row>
-        <mu-col class="demo-snackbar-radio" :key="p" v-for="p in positions" span="6" md="4">
-          <mu-radio v-model="normal.position" :value="p" :label="p"></mu-radio>
+        <mu-col class="demo-snackbar-radio" span="4" md="4">
+          <div :key="p" v-for="p in positions">
+            <mu-radio v-model="normal.position" :value="p" :label="p"></mu-radio>
+          </div>
+        </mu-col>
+        <mu-col span="6" md="6">
+          <mu-flex>
+            <mu-text-field v-model="normal.message" label="Message" label-float></mu-text-field>
+            <mu-text-field v-model.number="normal.timeout" label="Timeout" type="number" label-float style="margin-left: 10px;"></mu-text-field>
+          </mu-flex>
+          <mu-button color="primary" @click="openNormalSnackbar">show Snackbar</mu-button>
+          <mu-snackbar :position="normal.position" :open.sync="normal.open">
+            {{normal.message}}
+            <mu-button flat slot="action" color="secondary" @click="normal.open = false">Close</mu-button>
+          </mu-snackbar>
         </mu-col>
       </mu-row>
-      <mu-flex wrap="wrap">
-        <mu-text-field v-model="normal.message" label="Message" label-float></mu-text-field>
-        <mu-text-field v-model.number="normal.timeout" label="Timeout" type="number" label-float></mu-text-field>
-      </mu-flex>
-      <mu-button full-width color="primary" @click="openNormalSnackbar">show Snackbar</mu-button>
-      <mu-snackbar :position="normal.position" :open.sync="normal.open">
-        {{normal.message}}
-        <mu-button flat slot="action" color="secondary" @click="normal.open = false">Close</mu-button>
-      </mu-snackbar>
     </div>
 
     <h2>Different colors and icons</h2>
     <div class="code">
       <mu-row>
-        <mu-col class="demo-snackbar-radio" :key="c" v-for="c in colors" span="6" md="3">
-          <mu-radio v-model="color.color" :color="color.color" :value="c" :label="c"></mu-radio>
+        <mu-col span="4" md="4">
+          <div :key="c" v-for="c in colors">
+            <mu-radio v-model="color.color" :color="color.color" :value="c" :label="c"></mu-radio>
+          </div>
+        </mu-col>
+        <mu-col span="6" md="6">
+          <mu-flex>
+            <mu-text-field v-model="color.message" label="Message" label-float></mu-text-field>
+            <mu-text-field v-model.number="color.timeout" label="Timeout" type="number" label-float style="margin-left: 10px;"></mu-text-field>
+          </mu-flex>
+          <mu-button color="primary" @click="openColorSnackbar">show Snackbar</mu-button>
+          <mu-snackbar position="bottom-start" :color="color.color" :open.sync="color.open">
+            <mu-icon left :value="icon"></mu-icon>
+            {{color.message}}
+            <mu-button flat slot="action" color="#fff" @click="color.open = false">Close</mu-button>
+          </mu-snackbar>
         </mu-col>
       </mu-row>
-      <mu-flex wrap="wrap">
-        <mu-text-field v-model="color.message" label="Message" label-float></mu-text-field>
-        <mu-text-field v-model.number="color.timeout" label="Timeout" type="number" label-float></mu-text-field>
-      </mu-flex>
-      <mu-button full-width color="primary" @click="openColorSnackbar">show Snackbar</mu-button>
-      <mu-snackbar :color="color.color" :open.sync="color.open">
-        <mu-icon left :value="icon"></mu-icon>
-        {{color.message}}
-        <mu-button flat slot="action" color="#fff" @click="color.open = false">Close</mu-button>
-      </mu-snackbar>
     </div>
 
     <h2>Snackbar Props</h2>
