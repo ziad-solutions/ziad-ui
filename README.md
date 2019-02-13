@@ -37,9 +37,18 @@ Antes de rodar o build verifique qual é a próxima versão a buildar e altere c
 npm run build
 ```
 
+## 4. Publicando a versão no npmjs
+
+```
+npm login
+npm publish
+```
+
 -------------------------------------------------------
 
-## 4. Pegadinhas
+-------------------------------------------------------
+
+## 5. Dicas
 
 - As vezes pode precisar do parcel para rodar a demo
 - Todos os comandos acima devem ser rodados em um terminal unix (no caso do windows utilize o ubuntu cmd)

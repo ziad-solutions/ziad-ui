@@ -1,8 +1,13 @@
 import Vue from 'vue';
 import keycode from 'keycode';
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+// import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import bodyScrollLock from 'body-scroll-lock';
 import overlayOpt from './Overlay';
 const Overlay = Vue.extend(overlayOpt);
+
+const disableBodyScroll = bodyScrollLock.disableBodyScroll;
+const enableBodyScroll = bodyScrollLock.enableBodyScroll;
+const clearAllBodyScrollLocks = bodyScrollLock.clearAllBodyScrollLocks;
 
 const PopupManager = {
   instances: [],
