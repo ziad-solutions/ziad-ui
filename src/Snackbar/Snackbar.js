@@ -18,7 +18,7 @@ export default {
       type: String,
       default: 'bottom',
       validator (val) {
-        return ['top-start', 'top', 'top-end', 'bottom-start', 'bottom', 'bottom-end'].indexOf(val) !== -1;
+        return ['center', 'top-start', 'top', 'top-end', 'bottom-start', 'bottom', 'bottom-end'].indexOf(val) !== -1;
       }
     }
   },

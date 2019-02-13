@@ -40,65 +40,131 @@
     </div>
 
     <h2>Snackbar Props</h2>
-    <table class="table"><thead><tr><th>Attribute</th><th>Description</th><th>Type</th><th>Accepted values</th><th>Default</th></tr></thead><tbody><tr><td>color</td><td>color</td><td>String</td><td>—</td><td>—</td></tr><tr><td>text-color</td><td>text color</td><td>String</td><td>—</td><td>—</td></tr><tr><td>message</td><td>message</td><td>String</td><td>—</td><td>—</td></tr><tr><td>position</td><td>popup position</td><td>String</td><td>top-start / top / top-end / bottom-start / bottom / bottom-end</td><td>bottom</td></tr><tr><td>open</td><td>whether to open</td><td>Boolean</td><td>—</td><td>false</td></tr></tbody></table>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Attribute</th>
+          <th>Description</th>
+          <th>Type</th>
+          <th>Accepted values</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>color</td>
+          <td>color</td>
+          <td>String</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>text-color</td>
+          <td>text color</td>
+          <td>String</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>message</td>
+          <td>message</td>
+          <td>String</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>position</td>
+          <td>popup position</td>
+          <td>String</td>
+          <td>center / top-start / top / top-end / bottom-start / bottom / bottom-end</td>
+          <td>bottom</td>
+        </tr>
+        <tr>
+          <td>open</td>
+          <td>whether to open</td>
+          <td>Boolean</td>
+          <td>—</td>
+          <td>false</td>
+        </tr>
+      </tbody>
+    </table>
 
     <h2>Snackbar Slots</h2>
-    <table class="table"><thead><tr><th>Attribute</th><th>Description</th></tr></thead><tbody><tr><td>action</td><td>slot to place action button</td></tr><tr><td>default</td><td>place text messages and icons</td></tr></tbody></table>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Attribute</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>action</td>
+          <td>slot to place action button</td>
+        </tr>
+        <tr>
+          <td>default</td>
+          <td>place text messages and icons</td>
+        </tr>
+      </tbody>
+    </table>
 
   </div>
 </template>
 
 <script>
-export default {
-  data () {
-    return {
-      positions: ['top-start', 'top', 'top-end', 'bottom-start', 'bottom', 'bottom-end'],
-      normal: {
-        position: 'bottom',
-        message: 'Hello World, Snackbar !',
-        open: false,
-        timeout: 3000
-      },
-      colors: ['success', 'info', 'error', 'warning'],
-      color: {
-        color: 'success',
-        message: 'Hello World, Snackbar !',
-        open: false,
-        timeout: 3000
-      }
-    };
-  },
-  computed: {
-    icon () {
+  export default {
+    data() {
       return {
-        success: 'check_circle',
-        info: 'info',
-        warning: 'priority_high',
-        error: 'warning'
-      }[this.color.color]
-    }
-  },
-  methods: {
-    openNormalSnackbar () {
-      if (this.normal.timer) clearTimeout(this.normal.timer);
-      this.normal.open = true;
-      this.normal.timer = setTimeout(() => {
-        this.normal.open = false;
-      }, this.normal.timeout);
+        positions: ['center', 'top-start', 'top', 'top-end', 'bottom-start', 'bottom', 'bottom-end'],
+        normal: {
+          position: 'bottom',
+          message: 'Hello World, Snackbar !',
+          open: false,
+          timeout: 3000
+        },
+        colors: ['success', 'info', 'error', 'warning'],
+        color: {
+          color: 'success',
+          message: 'Hello World, Snackbar !',
+          open: false,
+          timeout: 3000
+        }
+      };
     },
-    openColorSnackbar () {
-      if (this.color.timer) clearTimeout(this.color.timer);
-      this.color.open = true;
-      this.color.timer = setTimeout(() => {
-        this.color.open = false;
-      }, this.color.timeout);
+    computed: {
+      icon() {
+        return {
+          success: 'check_circle',
+          info: 'info',
+          warning: 'priority_high',
+          error: 'warning'
+        } [this.color.color]
+      }
+    },
+    methods: {
+      openNormalSnackbar() {
+        if (this.normal.timer) clearTimeout(this.normal.timer);
+        this.normal.open = true;
+        this.normal.timer = setTimeout(() => {
+          this.normal.open = false;
+        }, this.normal.timeout);
+      },
+      openColorSnackbar() {
+        if (this.color.timer) clearTimeout(this.color.timer);
+        this.color.open = true;
+        this.color.timer = setTimeout(() => {
+          this.color.open = false;
+        }, this.color.timeout);
+      }
     }
-  }
-};
+  };
+
 </script>
 
 <style>
-.demo-snackbar-radio {
-  margin: 8px 0;
-}
+  .demo-snackbar-radio {
+    margin: 8px 0;
+  }
+
 </style>
