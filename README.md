@@ -43,7 +43,7 @@ npm run build
 
 - As vezes pode precisar do parcel para rodar a demo
 - Todos os comandos acima devem ser rodados em um terminal unix (no caso do windows utilize o ubuntu cmd)
-- Em algumas situações no ubuntu não consegue instalar o NPM
+- Em algumas situações no ubuntu não consegue instalar o NPM, mas com jeitinho vai conseguir
 - Com acesso ao terminal do ubuntu no windows 10 para acessar o diretório C:/ digite `cd /mtn/c`
 
 
