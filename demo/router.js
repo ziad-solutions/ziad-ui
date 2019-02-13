@@ -10,6 +10,7 @@ import DatePicker from './views/DatePicker.vue';
 import DataTable from './views/DataTable.vue';
 import Dialog from './views/Dialog.vue';
 import Divider from './views/Divider.vue';
+import Dot from './views/Dot.vue';
 import ExpansionPanel from './views/ExpansionPanel.vue';
 import Form from './views/Form.vue';
 import List from './views/List.vue';
@@ -66,6 +67,11 @@ export default new Router({
       path: '/divider',
       name: 'divider',
       component: Divider
+    },
+    {
+      path: '/dot',
+      name: 'dot',
+      component: Dot
     },
     {
       path: '/expansion-panel',

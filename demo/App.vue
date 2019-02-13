@@ -40,6 +40,7 @@ export default {
         { name: 'DataTable', route: 'datatable'},
         { name: 'Dialog', route: 'dialog'},
         { name: 'Divider', route: 'divider'},
+        { name: 'Dot', route: 'dot'},
         { name: 'ExpansionPanel', route: 'expansion-panel'},
         { name: 'Form', route: 'form'},
         { name: 'List', route: 'list'},
@@ -62,7 +63,7 @@ export default {
   .content {
     margin: auto;
     max-width: 1000px;
-    padding: 0 10px;
+    padding: 80px 10px;
     margin-bottom: 30px;
   }
 
@@ -82,7 +83,14 @@ export default {
   }
 
   .mu-appbar {
-    height: 50px !important;
+    height: auto !important;
+    padding: 2px;
+    background: #2e235a;
+    background: linear-gradient(45deg, #2e235a 0%, #8a2c8a 70%);
+    position: fixed;
+    width: 100%;
+    margin-top: 0;
+    top: 0;
   }
   .mu-appbar-title {
     font-size: 12px;
@@ -100,6 +108,10 @@ export default {
   }
   table.table thead {
     background: #ccc;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #666;
   }
 
 </style>
