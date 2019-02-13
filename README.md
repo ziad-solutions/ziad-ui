@@ -44,6 +44,7 @@ npm run build
 - As vezes pode precisar do parcel para rodar a demo
 - Todos os comandos acima devem ser rodados em um terminal unix (no caso do windows utilize o ubuntu cmd)
 - Em algumas situações no ubuntu não consegue instalar o NPM
+- Com acesso ao terminal do ubuntu no windows 10 para acessar o diretório C:/ digite `cd /mtn/c`
 
 
 Esse projeto é um Fork de [MuseUI](https://muse-ui.org) verifique a documentação.
