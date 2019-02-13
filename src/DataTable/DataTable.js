@@ -15,7 +15,7 @@ export default {
     columns: Array,
     noDataText: {
       type: String,
-      default: '暂无数据'
+      default: 'Nenhum conteúdo para listar'
     },
     height: [String, Number],
     maxHeight: [String, Number],
