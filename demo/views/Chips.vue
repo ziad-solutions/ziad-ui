@@ -24,26 +24,82 @@
     </div>
 
     <h2>Chip Props</h2>
-    <table class="table"><thead><tr><th>Attribute</th><th>Description</th><th>Type</th><th>Accepted values</th><th>Default</th></tr></thead><tbody><tr><td>color</td><td>chip color</td><td>String</td><td>—</td><td>—</td></tr><tr><td>text-color</td><td>chip font color</td><td>String</td><td>—</td><td>—</td></tr><tr><td>selected</td><td>selected state</td><td>Boolean</td><td>—</td><td>false</td></tr><tr><td>delete</td><td>display delete icon</td><td>Boolean</td><td>—</td><td>false</td></tr></tbody></table>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Attribute</th>
+          <th>Description</th>
+          <th>Type</th>
+          <th>Accepted values</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>color</td>
+          <td>chip color</td>
+          <td>String</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>text-color</td>
+          <td>chip font color</td>
+          <td>String</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>selected</td>
+          <td>selected state</td>
+          <td>Boolean</td>
+          <td>—</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>delete</td>
+          <td>display delete icon</td>
+          <td>Boolean</td>
+          <td>—</td>
+          <td>false</td>
+        </tr>
+      </tbody>
+    </table>
 
     <h2>Chip Events</h2>
-    <table class="table"><thead><tr><th>Name</th><th>Description</th><th>Parameters</th></tr></thead><tbody><tr><td>delete</td><td>trigger event when clicking delete icon</td><td>—</td></tr></tbody></table>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Parameters</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>delete</td>
+          <td>trigger event when clicking delete icon</td>
+          <td>—</td>
+        </tr>
+      </tbody>
+    </table>
 
   </div>
 </template>
 
 <script>
-export default {
-  methods: {
-    handleClose () {
-      window.alert('You clicked the delete button.')
+  export default {
+    methods: {
+      handleClose() {
+        window.alert('You clicked the delete button.')
+      }
     }
   }
-}
+
 </script>
 <style lang="less">
-.mu-chip {
-  margin-right: 10px;
-}
-</style>
+  .mu-chip {
+    margin-right: 10px;
+  }
 
+</style>

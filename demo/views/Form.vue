@@ -47,21 +47,22 @@
 </template>
 
 <script>
-export default {
-  data () {
-    return {
-      labelPosition: 'top',
-      form: {
-        input: '',
-        select: '',
-        date: '',
-        radio: '',
-        checkbox: [],
-        switch: false,
-        slider: 30,
-        textarea: ''
+  export default {
+    data() {
+      return {
+        labelPosition: 'top',
+        form: {
+          input: '',
+          select: '',
+          date: '',
+          radio: '',
+          checkbox: [],
+          switch: false,
+          slider: 30,
+          textarea: ''
+        }
       }
     }
-  }
-};
+  };
+
 </script>

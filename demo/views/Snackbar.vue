@@ -13,7 +13,8 @@
         <mu-col span="6" md="6">
           <mu-flex>
             <mu-text-field v-model="normal.message" label="Message" label-float></mu-text-field>
-            <mu-text-field v-model.number="normal.timeout" label="Timeout" type="number" label-float style="margin-left: 10px;"></mu-text-field>
+            <mu-text-field v-model.number="normal.timeout" label="Timeout" type="number" label-float
+              style="margin-left: 10px;"></mu-text-field>
           </mu-flex>
           <mu-button color="primary" @click="openNormalSnackbar">show Snackbar</mu-button>
           <mu-snackbar :position="normal.position" :open.sync="normal.open">
@@ -35,7 +36,8 @@
         <mu-col span="6" md="6">
           <mu-flex>
             <mu-text-field v-model="color.message" label="Message" label-float></mu-text-field>
-            <mu-text-field v-model.number="color.timeout" label="Timeout" type="number" label-float style="margin-left: 10px;"></mu-text-field>
+            <mu-text-field v-model.number="color.timeout" label="Timeout" type="number" label-float
+              style="margin-left: 10px;"></mu-text-field>
           </mu-flex>
           <mu-button color="primary" @click="openColorSnackbar">show Snackbar</mu-button>
           <mu-snackbar position="bottom-start" :color="color.color" :open.sync="color.open">

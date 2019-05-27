@@ -145,7 +145,187 @@
     </div>
 
     <h2>Button props</h2>
-    <table class="table"><thead><tr><th>Attribute</th><th>Description</th><th>Type</th><th>Accepted values</th><th>Default</th></tr></thead><tbody><tr><td>color</td><td>button color</td><td>String</td><td>—</td><td>-</td></tr><tr><td>textColor</td><td>text color</td><td>String</td><td>—</td><td>—</td></tr><tr><td>ripple</td><td>whether there is ripple effect</td><td>Boolean</td><td>—</td><td>true</td></tr><tr><td>fab</td><td>floating button</td><td>Boolean</td><td>—</td><td>false</td></tr><tr><td>flat</td><td>flat button</td><td>Boolean</td><td>—</td><td>false</td></tr><tr><td>icon</td><td>icon button</td><td>Boolean</td><td>—</td><td>false</td></tr><tr><td>small</td><td>small button</td><td>Boolean</td><td>—</td><td>false</td></tr><tr><td>large</td><td>large button</td><td>Boolean</td><td>—</td><td>false</td></tr><tr><td>round</td><td>fillet button</td><td>Boolean</td><td>—</td><td>false</td></tr><tr><td>full-width</td><td>block button</td><td>Boolean</td><td>—</td><td>false</td></tr><tr><td>disabled</td><td>disable button</td><td>Boolean</td><td>—</td><td>false</td></tr><tr><td>type</td><td>button type, equals the type property of the button label</td><td>String</td><td>-</td><td>button</td></tr><tr><td>keyboard-focused</td><td>keybroad event to get focus</td><td>Boolean</td><td>—</td><td>false</td></tr><tr><td>href</td><td>Equivalent to the href attribute of the a tag. After setting, it will be rendered as a tag. The default is to use the button tag.</td><td>String</td><td>—</td><td>—</td></tr><tr><td>to</td><td>Indicates the link to the target route. After setup, the component will be rendered as <code>router-link</code>, and when clicked, the value of <code>to</code> will be immediately passed to <code>router.push()</code>, so the value can be a string or an object that describes the target location.</td><td>String/Object</td><td>-</td><td>-</td></tr><tr><td>tag</td><td>When you want the <code>&lt;router-link&gt;</code> to be rendered as a tag, such as <code>&lt;li&gt;</code>. So we use the <code>tag prop</code> class to specify which tag, and it will still listen to clicks and trigger navigation.</td><td>String</td><td>-</td><td>-</td></tr><tr><td>active-class</td><td>Sets the CSS class name to use when the link is activated. The default value can be configured globally via the construction option <code>linkactiveclass</code> of the route.</td><td>String</td><td>-</td><td>-</td></tr><tr><td>event</td><td>declares an event that can be used to trigger a navigation. Can be a string or an array that contains a string</td><td>String/Array</td><td>—</td><td>click</td></tr><tr><td>exact</td><td>The “Activate” default class name is based on the <strong>inclusive match</strong> (all contains matches). For example, if the current path starts with <code>/a</code>, then <code>&lt;router-link to=""/a""&gt;</code> CSS class name will also be set.</td><td>Boolean</td><td>—</td><td>—</td></tr><tr><td>exact-active-class</td><td>Configure the class that should be activated when the link is exactly matched. Note The default values can also be configured globally through the routing constructor option Linkexactactiveclass.</td><td>String</td><td>—</td><td>router-link-exact-active</td></tr><tr><td>append</td><td>When the <code>append</code> property is set, the base path is added before the current (relative) path. For example, we navigate from <code>/a</code> to a relative path b, if no append is configured, the path is <code>/b</code>, and if it is <code>/a/b</code></td><td>Boolean</td><td>—</td><td>false</td></tr><tr><td>replace</td><td>Setting the <code>replace</code> property, when clicked, will call <code>router.replace()</code> instead of <code>router.push()</code>, so the navigation will not leave the history record.</td><td>Boolean</td><td>—</td><td>false</td></tr></tbody></table>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Attribute</th>
+          <th>Description</th>
+          <th>Type</th>
+          <th>Accepted values</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>color</td>
+          <td>button color</td>
+          <td>String</td>
+          <td>—</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>textColor</td>
+          <td>text color</td>
+          <td>String</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>ripple</td>
+          <td>whether there is ripple effect</td>
+          <td>Boolean</td>
+          <td>—</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>fab</td>
+          <td>floating button</td>
+          <td>Boolean</td>
+          <td>—</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>flat</td>
+          <td>flat button</td>
+          <td>Boolean</td>
+          <td>—</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>icon</td>
+          <td>icon button</td>
+          <td>Boolean</td>
+          <td>—</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>small</td>
+          <td>small button</td>
+          <td>Boolean</td>
+          <td>—</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>large</td>
+          <td>large button</td>
+          <td>Boolean</td>
+          <td>—</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>round</td>
+          <td>fillet button</td>
+          <td>Boolean</td>
+          <td>—</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>full-width</td>
+          <td>block button</td>
+          <td>Boolean</td>
+          <td>—</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>disabled</td>
+          <td>disable button</td>
+          <td>Boolean</td>
+          <td>—</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>type</td>
+          <td>button type, equals the type property of the button label</td>
+          <td>String</td>
+          <td>-</td>
+          <td>button</td>
+        </tr>
+        <tr>
+          <td>keyboard-focused</td>
+          <td>keybroad event to get focus</td>
+          <td>Boolean</td>
+          <td>—</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>href</td>
+          <td>Equivalent to the href attribute of the a tag. After setting, it will be rendered as a tag. The default is
+            to use the button tag.</td>
+          <td>String</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>to</td>
+          <td>Indicates the link to the target route. After setup, the component will be rendered as
+            <code>router-link</code>, and when clicked, the value of <code>to</code> will be immediately passed to
+            <code>router.push()</code>, so the value can be a string or an object that describes the target location.
+          </td>
+          <td>String/Object</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>tag</td>
+          <td>When you want the <code>&lt;router-link&gt;</code> to be rendered as a tag, such as
+            <code>&lt;li&gt;</code>. So we use the <code>tag prop</code> class to specify which tag, and it will still
+            listen to clicks and trigger navigation.</td>
+          <td>String</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>active-class</td>
+          <td>Sets the CSS class name to use when the link is activated. The default value can be configured globally
+            via the construction option <code>linkactiveclass</code> of the route.</td>
+          <td>String</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>event</td>
+          <td>declares an event that can be used to trigger a navigation. Can be a string or an array that contains a
+            string</td>
+          <td>String/Array</td>
+          <td>—</td>
+          <td>click</td>
+        </tr>
+        <tr>
+          <td>exact</td>
+          <td>The “Activate” default class name is based on the <strong>inclusive match</strong> (all contains matches).
+            For example, if the current path starts with <code>/a</code>, then <code>&lt;router-link
+              to=""/a""&gt;</code> CSS class name will also be set.</td>
+          <td>Boolean</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>exact-active-class</td>
+          <td>Configure the class that should be activated when the link is exactly matched. Note The default values can
+            also be configured globally through the routing constructor option Linkexactactiveclass.</td>
+          <td>String</td>
+          <td>—</td>
+          <td>router-link-exact-active</td>
+        </tr>
+        <tr>
+          <td>append</td>
+          <td>When the <code>append</code> property is set, the base path is added before the current (relative) path.
+            For example, we navigate from <code>/a</code> to a relative path b, if no append is configured, the path is
+            <code>/b</code>, and if it is <code>/a/b</code></td>
+          <td>Boolean</td>
+          <td>—</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>replace</td>
+          <td>Setting the <code>replace</code> property, when clicked, will call <code>router.replace()</code> instead
+            of <code>router.push()</code>, so the navigation will not leave the history record.</td>
+          <td>Boolean</td>
+          <td>—</td>
+          <td>false</td>
+        </tr>
+      </tbody>
+    </table>
 
   </div>
 </template>
@@ -154,12 +334,14 @@
   .mu-button {
     margin-right: 10px;
   }
+
   .button-wrapper {
     text-align: center;
-      .mu-button{
-        margin: 8px;
-        vertical-align: top;
-      }
-  }
-</style>
 
+    .mu-button {
+      margin: 8px;
+      vertical-align: top;
+    }
+  }
+
+</style>

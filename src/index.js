@@ -1,6 +1,5 @@
 import './styles/base.less';
 import Alert from './Alert';
-import AppBar from './AppBar';
 import AutoComplete from './AutoComplete';
 import Avatar from './Avatar';
 import Badge from './Badge';
@@ -33,13 +32,10 @@ import Select from './Select';
 import SlidePicker from './SlidePicker';
 import Slider from './Slider';
 import Snackbar from './Snackbar';
-import Stepper from './Stepper';
-import SubHeader from './SubHeader';
 import Switch from './Switch';
 import Tabs from './Tabs';
 import TextField from './TextField';
 import Title from './Title';
-import Tooltip from './Tooltip';
 import './styles/theme.less';
 import theme from './theme';
 import * as Colors from './theme/colors';
@@ -47,13 +43,13 @@ import * as Colors from './theme/colors';
 const version = '__VERSION__';
 
 const components = {
-  Alert, AppBar, AutoComplete, Avatar,
+  Alert, AutoComplete, Avatar,
   Badge, Breadcrumbs, Button, BottomNav, Checkbox, Chip,
   DataTable, DateInput, Dialog, Divider, Dot, Drawer,
   ExpansionPanel, Form, Grid, GridList, Helpers, Icon, List, Menu,
   Pagination, Paper, Picker, Popover, Progress, Radio,
-  Select, SlidePicker, Slider, Snackbar, Stepper, SubHeader, Switch,
-  Tabs, TextField, Title, Tooltip
+  Select, SlidePicker, Slider, Snackbar, Switch,
+  Tabs, TextField, Title
 };
 
 function install (Vue) {
@@ -68,16 +64,12 @@ export {
   version,
   Colors,
   Alert,
-  AppBar,
   AutoComplete,
   Avatar,
   Badge,
   BottomNav,
-  // BottomSheet,
   Breadcrumbs,
   Button,
-  // Card,
-  // Carousel,
   Checkbox,
   Chip,
   DateInput,
@@ -93,7 +85,6 @@ export {
   Helpers,
   Icon,
   List,
-  // LoadMore,
   Menu,
   Pagination,
   Paper,
@@ -105,13 +96,10 @@ export {
   SlidePicker,
   Slider,
   Snackbar,
-  Stepper,
-  SubHeader,
   Switch,
   Tabs,
   TextField,
   Title,
-  Tooltip,
   theme,
   install
 };
