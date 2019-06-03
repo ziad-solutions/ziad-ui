@@ -36,6 +36,7 @@ import Switch from './Switch';
 import Tabs from './Tabs';
 import TextField from './TextField';
 import Title from './Title';
+import Tooltip from './Tooltip';
 import './styles/theme.less';
 import theme from './theme';
 import * as Colors from './theme/colors';
@@ -49,7 +50,7 @@ const components = {
   ExpansionPanel, Form, Grid, GridList, Helpers, Icon, List, Menu,
   Pagination, Paper, Picker, Popover, Progress, Radio,
   Select, SlidePicker, Slider, Snackbar, Switch,
-  Tabs, TextField, Title
+  Tabs, TextField, Title, Tooltip
 };
 
 function install (Vue) {
@@ -100,6 +101,7 @@ export {
   Tabs,
   TextField,
   Title,
+  Tooltip,
   theme,
   install
 };
