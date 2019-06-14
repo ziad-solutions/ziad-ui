@@ -107,6 +107,7 @@ export default {
           format: this.format,
           mode: this.view,
           color: this.displayColor,
+          interval: this.interval,
           viewType: this.viewType,
           affix: this.getAffix()
         },

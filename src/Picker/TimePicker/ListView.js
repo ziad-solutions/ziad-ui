@@ -57,8 +57,8 @@ export default {
   methods: {
     scrollToSelected (container) {
       const buttonNode = container.querySelector('.is-active');
-      const btnTop = buttonNode.offsetTop;
-      const btnHeight = buttonNode.offsetHeight;
+      const btnTop = buttonNode ? buttonNode.offsetTop : 0;
+      const btnHeight = buttonNode ? buttonNode.offsetHeight : 0;
       const containerTop = container.offsetTop;
       const containerHeight = container.offsetHeight;
       const top = containerTop + containerHeight / 2;
