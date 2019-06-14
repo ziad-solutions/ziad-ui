@@ -12,6 +12,10 @@ export default {
       default () {
         return new Date();
       }
+    },
+    interval: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {
@@ -26,10 +30,23 @@ export default {
     },
     minutes () {
       const minutes = [];
-      for (let i = 1; i <= 60; i++) {
-        const num = i % 60;
-        num === 0 ? minutes.unshift('00') : minutes.push(num > 9 ? num : '0' + num);
+      if (this.interval) {
+        minutes.unshift('00');
+        minutes.push(10);
+        minutes.push(20);
+        minutes.push(30);
+        minutes.push(40);
+        minutes.push(50);
+      } else {
+        for (let i = 1; i <= 60; i++) {
+          const num = i % 60;
+          num === 0 ? minutes.unshift('00') : minutes.push(num > 9 ? num : '0' + num);
+        }
       }
+      // for (let i = 1; i <= 60; i++) {
+      //   const num = i % 60;
+      //   num === 0 ? minutes.unshift('00') : minutes.push(num > 9 ? num : '0' + num);
+      // }
       return minutes;
     }
   },

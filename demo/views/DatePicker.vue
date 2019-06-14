@@ -26,6 +26,16 @@
       </mu-flex>
     </div>
 
+    <h2>Time</h2>
+    <div class="code">
+      <mu-flex wrap="wrap">
+        <mu-paper :z-depth="1" class="demo-date-picker">
+          <mu-date-input v-model="date5" :date.sync="date5" :interval="true" label="Selecione o horário" type="time" clock-type="24hr" view-type="list" full-width></mu-date-input>
+        </mu-paper>
+      </mu-flex>
+    </div>
+
+
     <h2>No Date selected</h2>
     <div class="code">
       <mu-flex wrap="wrap">
@@ -217,6 +227,7 @@
         date2: undefined,
         date3: undefined,
         date4: undefined,
+        date5: undefined,
         enDateFormat
       };
     }

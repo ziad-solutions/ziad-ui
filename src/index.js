@@ -1,5 +1,6 @@
 import './styles/base.less';
 import Alert from './Alert';
+import AppBar from './AppBar';
 import AutoComplete from './AutoComplete';
 import Avatar from './Avatar';
 import Badge from './Badge';
@@ -44,7 +45,7 @@ import * as Colors from './theme/colors';
 const version = '__VERSION__';
 
 const components = {
-  Alert, AutoComplete, Avatar,
+  Alert, AppBar, AutoComplete, Avatar,
   Badge, Breadcrumbs, Button, BottomNav, Checkbox, Chip,
   DataTable, DateInput, Dialog, Divider, Dot, Drawer,
   ExpansionPanel, Form, Grid, GridList, Helpers, Icon, List, Menu,
@@ -65,6 +66,7 @@ export {
   version,
   Colors,
   Alert,
+  AppBar,
   AutoComplete,
   Avatar,
   Badge,

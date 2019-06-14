@@ -33,6 +33,10 @@ export default {
       default () {
         return new Date();
       }
+    },
+    interval: {
+      type: Boolean,
+      default: false
     }
   },
   data () {
@@ -140,7 +144,8 @@ export default {
       return h(ListView, {
         props: {
           format: this.format,
-          time: this.time
+          time: this.time,
+          interval: this.interval
         },
         on: {
           changeHours: (val) => this.handleChangeHours(val, true),

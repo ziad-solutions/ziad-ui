@@ -6,6 +6,7 @@ export default {
     dateTimeFormat: Object,
     view: String,
     format: String,
+    interval: Boolean,
     viewType: String,
     displayDate: Date
   },

@@ -129,6 +129,7 @@ export default {
       if (finished) this.view = 'minute';
     },
     handleChangeMinutes (minutes, finished) {
+      console.log('minutes', minutes);
       const time = new Date(this.date);
       time.setMinutes(minutes);
       this.changeTime(time, 'minute', finished);
@@ -145,6 +146,7 @@ export default {
           dateTimeFormat: this.dateTimeFormat,
           view: this.view,
           format: this.format,
+          interval: this.interval,
           viewType: this.viewType,
           color: this.displayColor,
           displayDate: this.displayDate
@@ -183,7 +185,8 @@ export default {
       return h(ListView, {
         props: {
           format: this.format,
-          time: this.date
+          time: this.date,
+          interval: this.interval
         },
         on: {
           changeHours: (val) => this.handleChangeHours(val, true),
