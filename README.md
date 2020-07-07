@@ -1,12 +1,8 @@
 
-<p align="center">
-  <img src="./demo/images/ziad.png">
-</p>
-
 
 ## 1. Instalação
 
-#### 1.1 Ziad UI está no NPM [npm package](https://www.npmjs.com/package/ziad-ui)
+#### 1.1 UI está no NPM [npm package](https://www.npmjs.com/package/ziad-ui)
 
 ```bash
 npm install ziad-ui -save
@@ -16,9 +12,9 @@ npm install ziad-ui -save
 
 ```javascript
 import Vue from 'vue'
-import ZiadUI from 'ziad-ui'
-import 'ziad-ui/dist/ziad-ui.css'
-Vue.use(ZiadUI)
+import UI from 'ziad-ui'
+import 'ui/dist/ziad-ui.css'
+Vue.use(UI)
 ```
 -------------------------------------------------------
 
