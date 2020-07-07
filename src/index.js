@@ -20,7 +20,7 @@ import Form from './Form';
 import Grid from './Grid';
 import GridList from './GridList';
 import Helpers from './Helpers';
-import Icon from './Icon';
+// import Icon from './Icon';
 import List from './List';
 import Menu from './Menu';
 import Pagination from './Pagination';
@@ -48,7 +48,7 @@ const components = {
   Alert, AppBar, AutoComplete, Avatar,
   Badge, Breadcrumbs, Button, BottomNav, Checkbox, Chip,
   DataTable, DateInput, Dialog, Divider, Dot, Drawer,
-  ExpansionPanel, Form, Grid, GridList, Helpers, Icon, List, Menu,
+  ExpansionPanel, Form, Grid, GridList, Helpers, List, Menu, // Icon, 
   Pagination, Paper, Picker, Popover, Progress, Radio,
   Select, SlidePicker, Slider, Snackbar, Switch,
   Tabs, TextField, Title, Tooltip
@@ -86,7 +86,7 @@ export {
   Grid,
   GridList,
   Helpers,
-  Icon,
+  // Icon,
   List,
   Menu,
   Pagination,
